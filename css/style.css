@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color:floralwhite;
+    line-height: 1.6;
+}
+
+#showcase {
+    background-image: url(https://i.imgur.com/lwvGryE.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#showcase h1{ 
+    
+    font-size: 150px;
+    line-height: 1.2;
+}
+
+#showcase p {font-size: 20px;}
+
+#showcase .button {
+    font-size: 18px;
+    text-decoration: none;
+    color: floralwhite;
+    border: floralwhite 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+#showcase .button:hover {
+    background: #82020e;
+    color: floralwhite;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.logo {
+  margin-left: 30px;
+  font-size: 1.45em;
+}
+
+.main-nav {
+  margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: #be0029;
+}
+
+.main-nav a {
+  color: #BC002D;
+  font-size: .99em;
+}
+
+.main-nav a:hover {
+  color: #82020e;
+}
+
+
+
+.header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+
+  border-radius: 5px;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+      .header{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+  }
+
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
